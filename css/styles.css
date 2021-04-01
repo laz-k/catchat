@@ -42,7 +42,7 @@ h1 {
 .iphone {
 	transform: rotate(25deg);
 	filter: drop-shadow(2px 2px 6px black);
-	/* box-shadow: 2px 2px 4px black; */
+  max-width: 12rem;
 }
 
 .btn-outline-light{
