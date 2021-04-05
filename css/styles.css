@@ -45,19 +45,61 @@ h1 {
   max-width: 12rem;
 }
 
-.btn-outline-light{
-  color: #ffedcb !important;
+.download-btn{
+	margin-top: 2rem;
+  color: #005b4b !important;
+	background-color: #ffedcb;
   border-color: #ffedcb !important;
+	box-shadow: 1px 1px 2px black;
 }
 
-.btn-outline-light:hover{
-  color: #005b4b !important;
-  background-color: #ffedcb !important;
+.download-btn:hover{
+  color: #ffedcb !important;
+  background-color: #000000 !important;
 
-  border-color: #ffedcb !important;
+  border-color: #000000 !important;
 }
 
 
 #features {
 	background: #ffedcb;
+}
+
+.feature-box {
+	text-align: center;
+	padding: 5%;
+}
+
+.feature-box h3{
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.feature-icons{
+	color: #cea872;
+}
+
+#testimonials{
+	background-color: #cea872;
+	text-align: center;
+}
+#testimonials h2{
+	font-weight: 700;
+}
+
+.testimonial-img{
+	width: 10%;
+	border-radius: 100%;
+	margin: 20px;
+}
+
+#press{
+	background-color: #cea872;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.press-logos {
+	width: 15%;
+	margin: 1rem 1rem 2rem ;
 }
