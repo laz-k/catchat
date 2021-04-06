@@ -1,5 +1,6 @@
-body {
+body, html {
 	font-family: "Montserrat";
+
 }
 
 #title {
@@ -7,7 +8,7 @@ body {
 }
 
 .container-fluid {
-	padding: 3% 15%;
+	padding: 3% 10%;
 }
 
 .navbar {
@@ -33,7 +34,6 @@ body {
 }
 
 h1 {
-	font-family: "Montserrat";
 	font-weight: 900;
 	font-size: 3rem;
 	line-height: 1.5;
@@ -42,12 +42,13 @@ h1 {
 .iphone {
 	transform: rotate(25deg);
 	filter: drop-shadow(2px 2px 6px black);
-  max-width: 12rem;
+  max-width: 10rem;
+	/* position: absolute; */
 }
 
 .download-btn{
 	margin-top: 2rem;
-  color: #005b4b !important;
+  color: #967441 !important;
 	background-color: #ffedcb;
   border-color: #ffedcb !important;
 	box-shadow: 1px 1px 2px black;
@@ -56,13 +57,14 @@ h1 {
 .download-btn:hover{
   color: #ffedcb !important;
   background-color: #000000 !important;
-
   border-color: #000000 !important;
 }
 
 
 #features {
 	background: #ffedcb;
+	position: relative;
+	z-index: 2;
 }
 
 .feature-box {
@@ -76,7 +78,7 @@ h1 {
 }
 
 .feature-icons{
-	color: #cea872;
+	color: #967441;
 }
 
 #testimonials{
@@ -88,8 +90,9 @@ h1 {
 }
 
 .testimonial-img{
-	width: 10%;
-	border-radius: 100%;
+	width: 5rem;
+	height: 5rem;
+	border-radius:50%;
 	margin: 20px;
 }
 
@@ -103,3 +106,97 @@ h1 {
 	width: 15%;
 	margin: 1rem 1rem 2rem ;
 }
+
+.carousel-item{
+	height: 20%;
+	padding: 5% 15%;
+
+}
+
+#pricing{
+	background-color: #ffedcb;
+	text-align: center;
+	padding: 5rem;
+}
+#pricing h2{
+	font-weight: 700;
+}
+
+.card-header{
+	color: #ffffff;
+	background-color: #967441;
+
+}
+
+.card-body {
+	background-color: #cea872;
+
+}
+
+.btn-card{
+  color: #005b4b !important;
+	background-color: #ffedcb;
+  border-color: #ffedcb !important;
+	box-shadow: 1px 1px 2px black;
+}
+
+.btn-card:hover{
+  color: #ffedcb !important;
+  background-color: #000000 !important;
+
+  border-color: #000000 !important;
+}
+
+#cta,footer{
+	background-color: #cea872;
+
+}
+
+.cta-btn{
+  /* color: #967441 !important; */
+	background-color: #ffedcb;
+  border-color: #ffedcb !important;
+	box-shadow: 1px 1px 2px black;
+}
+
+.cta-btn:hover{
+  color: #ffedcb !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.contact{
+	padding: 8% 4%;
+}
+
+#contact {
+	background-color: #ffedcb;
+
+}
+
+.form-btn{
+	color: #000000 !important;
+	background-color: #cea872;
+  border-color: #cea872 !important;
+	box-shadow: 1px 1px 2px black;
+}
+
+.form-btn:hover{
+  color: #ffedcb !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.contact-info {
+	background-color: #cea872;
+	padding: 7%;
+}
+
+
+
+
+/* @media screen and (max-width: 768px) {
+	.iphone {
+		display: none;
+	}
+} */
