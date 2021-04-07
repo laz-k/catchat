@@ -4,7 +4,7 @@ body, html {
 }
 
 #title {
-	background-color: #cea872;
+	background-color: #ff006a;
 }
 
 .container-fluid {
@@ -12,7 +12,7 @@ body, html {
 }
 
 .navbar {
-	background: #ffedcb;
+	background: #FFE3EA;
 	padding: 1% 15%;
 }
 
@@ -20,23 +20,27 @@ body, html {
 	font-family: "Ubuntu";
 	font-weight: 500;
 	font-size: 2.5rem;
-	color: #005b4b !important;
+	color: #ff006a !important;
 }
 
 .nav-link {
-	color: #005b4b !important;
+	color: #ff006a !important;
 }
 
 .nav-link:hover {
 	/* border-bottom: 1px solid #005B4B; */
-	background: #005b4b;
-	color: #ffedcb !important;
+	background: #ff006a;
+	color: #FFE3EA !important;
 }
 
-h1 {
+#title h1 {
 	font-weight: 900;
 	font-size: 3rem;
 	line-height: 1.5;
+	margin-bottom: 2rem;
+	color: #fff;
+	filter: drop-shadow(1px 1px 3px black);
+
 }
 
 .iphone {
@@ -47,22 +51,21 @@ h1 {
 }
 
 .download-btn{
-	margin-top: 2rem;
-  color: #967441 !important;
-	background-color: #ffedcb;
-  border-color: #ffedcb !important;
+  color: #000000 !important;
+	background-color: #fff;
+  border-color: #fff !important;
 	box-shadow: 1px 1px 2px black;
 }
 
 .download-btn:hover{
-  color: #ffedcb !important;
+  color: #fff !important;
   background-color: #000000 !important;
   border-color: #000000 !important;
 }
 
 
 #features {
-	background: #ffedcb;
+	background: #FFE3EA;
 	position: relative;
 	z-index: 2;
 }
@@ -78,11 +81,11 @@ h1 {
 }
 
 .feature-icons{
-	color: #967441;
+	color: #ff006a;
 }
 
 #testimonials{
-	background-color: #cea872;
+	background-color: #ff006a;
 	text-align: center;
 }
 #testimonials h2{
@@ -94,10 +97,17 @@ h1 {
 	height: 5rem;
 	border-radius:50%;
 	margin: 20px;
+	border: 3px solid #FFE3EA;
+}
+
+.logo-text{
+	font-family: "Ubuntu";
+	font-weight: 700;
+	font-size: larger;
 }
 
 #press{
-	background-color: #cea872;
+	background-color: #ff006a;
 	text-align: center;
 	padding-bottom: 3%;
 }
@@ -114,7 +124,7 @@ h1 {
 }
 
 #pricing{
-	background-color: #ffedcb;
+	background-color: #FFE3EA;
 	text-align: center;
 	padding: 5rem;
 }
@@ -122,45 +132,62 @@ h1 {
 	font-weight: 700;
 }
 
+.card-title{
+	color: #ff006a;
+}
+
 .card-header{
 	color: #ffffff;
-	background-color: #967441;
+	background-color: #ff006a;
 
 }
 
 .card-body {
-	background-color: #cea872;
+	background-color: #fff;
 
 }
 
-.btn-card{
-  color: #005b4b !important;
-	background-color: #ffedcb;
-  border-color: #ffedcb !important;
+.card-btn{
+  color: #fff !important;
+	background-color: #ff006a;
+  border-color: #ff006a !important;
 	box-shadow: 1px 1px 2px black;
 }
 
-.btn-card:hover{
-  color: #ffedcb !important;
-  background-color: #000000 !important;
-
-  border-color: #000000 !important;
+.card-btn:hover{
+  color: #fff !important;
+  background-color: #7C0011 !important;
+  border-color: #7C0011 !important;
 }
+
 
 #cta,footer{
-	background-color: #cea872;
+	background-color: #ff006a;
 
 }
 
+#cta{
+	padding: 5% 15%;
+}
+
+.cta-text{
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	filter: drop-shadow(1px 1px 3px black);
+}
+
+
 .cta-btn{
-  /* color: #967441 !important; */
-	background-color: #ffedcb;
-  border-color: #ffedcb !important;
+  /* color: #ff006a !important; */
+	background-color: #fff;
+  border-color: #fff !important;
 	box-shadow: 1px 1px 2px black;
 }
 
 .cta-btn:hover{
-  color: #ffedcb !important;
+  color: #fff !important;
   background-color: #000000 !important;
   border-color: #000000 !important;
 }
@@ -170,33 +197,60 @@ h1 {
 }
 
 #contact {
-	background-color: #ffedcb;
+	background-color: #FFE3EA;
 
 }
 
 .form-btn{
-	color: #000000 !important;
-	background-color: #cea872;
-  border-color: #cea872 !important;
+	color: #fff !important;
+	background-color: #ff006a;
+  border-color: #ff006a !important;
 	box-shadow: 1px 1px 2px black;
 }
 
 .form-btn:hover{
-  color: #ffedcb !important;
+  color: #fff !important;
   background-color: #000000 !important;
   border-color: #000000 !important;
 }
 
 .contact-info {
-	background-color: #cea872;
+	background-color: #ff006a;
+	color: #fff;
 	padding: 7%;
 }
 
+#footer{
+	padding: 5% 15%;
+	color: #fff;
+}
 
 
-
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.iphone {
-		display: none;
+		transform: rotate(25deg);
+		filter: drop-shadow(2px 2px 6px black);
+		max-width: 10rem;
+		padding: 3rem 0;
+		/* position: absolute; */
 	}
-} */
+
+	#title h1 {
+		text-align: center;
+		font-size: 2.5rem;
+		
+	}
+
+	.download-container{
+		display: flex;
+		justify-content: center;
+	}
+
+	.download-btn{
+		font-size: 1.1rem;
+		margin: 1rem 0.5rem ;
+	}
+	
+
+
+}

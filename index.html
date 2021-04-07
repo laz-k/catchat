@@ -7,7 +7,7 @@
 		<title>catchat</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu:wght@300;400;500&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap"
 			rel="stylesheet"
 		/>
 		<script src="https://kit.fontawesome.com/d40456d52e.js" crossorigin="anonymous"></script>
@@ -23,29 +23,21 @@
 	<body>
 		<section id="title">
 			<!-- Nav Bar -->
-			<nav class="navbar navbar-expand-lg pb-3">
+			<nav class="navbar navbar-expand-lg pb-3 navbar-light">
 				<a class="navbar-brand" href="">catchat</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item px-2">
-							<a class="nav-link" href="">Contact</a>
+							<a class="nav-link" href="#contact">Contact</a>
 						</li>
 						<li class="nav-item px-2">
 							<a class="nav-link" href="#pricing">Pricing</a>
 						</li>
 						<li class="nav-item px-2">
-							<a class="nav-link" href="">Download</a>
+							<a class="nav-link" href="#cta">Download</a>
 						</li>
 					</ul>
 				</div>
@@ -53,16 +45,19 @@
 			<div class="container-fluid">
 				<!-- Title -->
 				<div class="row ">
-					<div class="col-lg-6 col-md-8 ">
+					<div class="col-lg-6 col-md-8">
 						<h1>Meet new and interesting cats nearby.</h1>
-						<button class="download-btn btn btn-lg btn-outline-dark me-1" type="button">
-							<i class="fab fa-apple"></i> Download
-						</button>
-						<button class="download-btn btn btn-lg btn-outline-light" type="button">
-							<i class="fab fa-google-play"></i> Download
-						</button>
+						<div class="download-container">
+
+							<button class="download-btn btn btn-lg btn-outline-dark me-1" type="button">
+								<i class="fab fa-apple"></i> Download
+							</button>
+							<button class="download-btn btn btn-lg btn-outline-light" type="button">
+								<i class="fab fa-google-play"></i> Download
+							</button>
+						</div>
 					</div>
-					<div class="col-lg-6 col-md-4 d-md-flex d-none justify-content-center">
+					<div class="col-lg-6 col-md-4 d-flex justify-content-center">
 						<img class="iphone" src="images/iphone6.png" alt="iphone-mockup" />
 					</div>
 				</div>
@@ -108,22 +103,19 @@
 
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<h2>
-								I no longer have to sniff other cats for love. I've found the hottest Scottish Fold on
-								catchat. Meoow.
+							<h2 class="text-white">
+								"I no longer have to sniff other cats for love. I've found the hottest Scottish Fold on <span class="logo-text">catchat</span>. Meoow!"
 							</h2>
 							<img class="testimonial-img" src="images/cat-img.jpg" alt="cat-profile" />
-							<em>Pebbles, New York</em>
-							<!-- <img src="..." class="d-block w-100" alt="..."> -->
+							<em class="text-white">Bili, Newark</em>
 						</div>
 						<div class="carousel-item">
-							<h2 class="testimonial-text">
+							<h2 class="text-white">
 								My cat used to be so lonely, but with catchat's help, they've found the love of their
-								life. I think.
+								life.
 							</h2>
 							<img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile" />
-							<em>Beverly, Illinois</em>
-							<!-- <img src="..." class="d-block w-100" alt="..."> -->
+							<em class="text-white">Beverly, Illinois</em>
 						</div>
 
 						<button
@@ -152,7 +144,6 @@
 
 		<section id="press">
 			<img class="press-logos" src="images/techcrunch.png" alt="tc-logo" />
-			<img class="press-logos" src="images/tnw.png" alt="tnw-logo" />
 			<img class="press-logos" src="images/bizinsider.png" alt="biz-insider-logo" />
 			<img class="press-logos" src="images/mashable.png" alt="mashable-logo" />
 		</section>
@@ -161,17 +152,17 @@
     
 		<section id="pricing">
       <div class="container">
-        <h2>A Plan for Every cat's Needs</h2>
+        <h2 class="fw-bolder">A Plan for Every cat's Needs</h2>
         <p>Simple and affordable price plans for you and your cat.</p>
         
         <div class="row my-5 text-center ">
           <div class="col-lg-4">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
-                <h4 class="my-0">Kitten</h4>
+                <h4 class="my-0">Munchkin</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">Free</h1>
+                <h1 class="card-title pricing-card-title fw-bolder">Free</h1>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>5 Matches Per Day</li>
                   <li>10 Messages Per Day</li>
@@ -179,17 +170,17 @@
                   <li>Email support</li>
                   <li>Help center access</li>
                 </ul>
-                <button type="button" class="btn btn-card btn-outline-primary">Sign Up</button>
+                <button type="button" class="btn card-btn btn-outline-primary">Sign Up</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
-                <h4 class="my-0">Adult</h4>
+                <h4 class="my-0">Highlander</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                <h1 class="card-title pricing-card-title fw-bolder">$15<small class="text-muted fw-light">/mo</small></h1>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Unlimited Matches</li>
                   <li>Unlimited Messages</li>
@@ -197,17 +188,17 @@
                   <li>Priority email support</li>
                   <li>Help center access</li>
                 </ul>
-                <button type="button" class="btn btn-card btn-primary">Sign Up</button>
+                <button type="button" class="btn card-btn btn-primary">Sign Up</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="card mb-4 rounded-3 shadow-sm ">
               <div class="card-header pt-3">
-                <h4 class="my-0">Senior</h4>
+                <h4 class="my-0">Ragdoll</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                <h1 class="card-title pricing-card-title fw-bolder">$29<small class="text-muted fw-light">/mo</small></h1>
                 <ul class="list-unstyled">
                   <li>Priority Listing</li>
                   <li>Unlimited Matches</li>
@@ -216,7 +207,7 @@
                   <li>Phone and email support</li>
                   <li>Help center access</li>
                 </ul>
-                <button type="button" class="btn btn-card btn-primary">Sign Up</button>
+                <button type="button" class="btn card-btn btn-primary">Sign Up</button>
               </div>
             </div>
           </div>
@@ -226,16 +217,14 @@
 
 		<!-- Call to Action -->
     
-    <section id="cta" class="text-center py-5">
-      <div class="container-fluid">
-        <h3 class="mb-4">Find the True Love of your Cat's Life Today.</h3>
-        <button class="cta-btn btn " type="button"><i class="fab fa-apple"></i> Download</button>
+    <section id="cta" class="text-center">
+        <h3 class="text-white cta-text">Find the True Love of your Cat's Life Today.</h3>
+        <button class="cta-btn btn me-3 " type="button"><i class="fab fa-apple"></i> Download</button>
         <button class="cta-btn btn " type="button"><i class="fab fa-google-play"></i> Download</button>
       </section>
       
       <!-- Footer -->
       
-    </div>
 		<section id="contact">
 
 			<div class="container contact">
@@ -247,7 +236,7 @@
 							<h4>We would love to hear from you !</h4>
 						</div>
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-9 mt-3">
 						<div class="contact-form ">
 							<div class="form-group">
 								<label class="control-label " for="first-name">First Name:</label>
@@ -284,8 +273,11 @@
 			</div>
 		</section>
 			
-      <footer id="footer" class="footer mt-auto py-3 text-center">
-        <p>© Copyright 2021 catchat</p>
+      <footer id="footer" class="footer mt-auto  text-center">
+				<i class="fab m-2 fa-facebook-square fa-2x"></i>
+				<i class="fab m-2 fa-twitter-square fa-2x"></i>
+				<i class="fab m-2 fa-instagram-square fa-2x"></i>
+        <p class="mt-2">© Copyright 2021 catchat</p>
       </footer>
 
 		<script
